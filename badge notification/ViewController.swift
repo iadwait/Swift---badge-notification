@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let application = UIApplication.shared
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.badge,.alert,.sound]) { (success, error) in
-        
+        print("Success")
         }
         application.applicationIconBadgeNumber = badgeNumber
         application.registerForRemoteNotifications()
